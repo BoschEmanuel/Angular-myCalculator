@@ -1,16 +1,20 @@
 <p>calculadora works!</p>
 
 <form>
+    <div class="form-group">
+        <p>Primer numero: <input type="text" class="form-control" [(ngModel)]="numero1" name="numero1"></p> 
 
-    <p>Primer numero: <input type="text" [(ngModel)]="numero1" name="numero1"></p> 
+        <p>Segundo numero: <input type="text" class="form-control" [(ngModel)]="numero2" name="numero2"></p> 
 
-    <p>Segundo numero: <input type="text" [(ngModel)]="numero2" name="numero2"></p> 
-
-    <!-- <input type="button" value="+"> -->
-    <input type="submit" value="sumar" (click)="sumar()">
-    <input type="submit" value="restar" (click)="restar()">
-
-    <!-- <input type="button" value="-"> -->
-    <p>Resultado: {{resultado}}</p>
-
+        <!-- <input type="button" value="+"> -->
+        <div class="form-row ">
+            <div class="col-12 ">
+                    <input type="submit" value="sumar"  class="btn btn-primary " (click)="sumar()">
+                    <input type="submit" value="restar" class="btn btn-primary float-end" (click)="restar()">
+            </div>
+        </div>
+       
+        <!-- <input type="button" value="-"> -->
+        <p>Resultado: {{resultado}}</p>
+    </div>
 </form>
