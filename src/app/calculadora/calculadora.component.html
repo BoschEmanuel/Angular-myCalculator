@@ -1,0 +1,16 @@
+<p>calculadora works!</p>
+
+<form>
+
+    <p>Primer numero: <input type="text" [(ngModel)]="numero1" name="numero1"></p> 
+
+    <p>Segundo numero: <input type="text" [(ngModel)]="numero2" name="numero2"></p> 
+
+    <!-- <input type="button" value="+"> -->
+    <input type="submit" value="sumar" (click)="sumar()">
+    <input type="submit" value="restar" (click)="restar()">
+
+    <!-- <input type="button" value="-"> -->
+    <p>Resultado: {{resultado}}</p>
+
+</form>
